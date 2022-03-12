@@ -50,6 +50,7 @@ function rng() {
     w = String(parseInt(audioelement.duration) % 60);
     if (w.length == 1) w = "0" + w;
     tot.innerHTML = "0" + parseInt((audioelement.duration) / 60) + ":" + w;
+    if(cur.innerHTML==tot.innerHTML)f=0;
     if (f) image.style.opacity = 1;
     else image.style.opacity = 0;
 }
