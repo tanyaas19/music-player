@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.jpg" alt="Music">Music</li>
+        </ul>
+    </nav>
+    <!-- mid container -->
+    <div class="container">
+
+        <div class="Songlist">
+            <h1>English Songs</h1>
+            <div class="songitemcontainer">
+                <div class="songItem">
+                    <img src="cover.jpg" alt="1">
+                    <span>Perfect</span>
+                    <span class="songlistplay"><span class="timestamp" > <i id="0"
+                                class="fa-solid fa-circle-play" onclick="rand(0)"></i></span> </span>
+                </div>
+                <div class="songItem">
+                    <img src="woman.jpg" alt="1">
+                    <span>Woman</span>
+                    <span class="songlistplay"><span class="timestamp"> <i id="1"
+                                class="fa-solid fa-circle-play" onclick="rand(1)"></i></span> </span>
+                </div>
+                <div class="songItem">
+                    <img src="closer.jpg" alt="1">
+                    <span>Closer</span>
+                    <span class="songlistplay"><span class="timestamp"> <i id="2"
+                                class="fa-solid fa-circle-play" onclick="rand(2)"></i></span> </span>
+                </div>
+                <div class="songItem">
+                    <img src="let me.jpg" alt="1">
+                    <span>Let me love you</span>
+                    <span class="songlistplay"><span class="timestamp"> <i id="3"
+                                class="fa-solid fa-circle-play" onclick="rand(3)"></i></span> </span>
+                </div>
+                <div class="songItem">
+                    <img src="newrules.jpg" alt="1">
+                    <span>New Rules</span>
+                    <span class="songlistplay"><span class="timestamp"> <i id="4"
+                                class="fa-solid fa-circle-play" onclick="rand(4)"></i></span> </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="Songbanner"></div>
+    </div>
+    <!-- bottom container -->
+    <div class="bottom">
+        <!-- progress bar -->
+        <div class="inline">
+            <p id="cur">00:00</p>
+        <input type="range" name="range" id="myprogressbar" min="0" max="100" value="0" onchange="change()">
+        <p id="tot">00:00</p>
+        </div>
+        <div class="icons">
+            <!-- icons -->
+            <!-- optional->"fas fa-2x"->used to increase size -->
+            <i class="fas fa-2x fa-solid fa-backward-step" onclick="back()"></i>
+            <i id="abc" class="fas fa-2x fa-solid fa-circle-play" onclick="play()"></i>
+            <i class="fas fa-2x fa-solid fa-forward-step" onclick="next()"></i>
+
+        </div>
+        <div class="songinfo">
+            <img src="gif.gif" width="42px" alt="" id="image">
+        </div>
+    </div>
+    <!-- including font awesome for icons -->
+    <script src="https://kit.fontawesome.com/56079cfbc7.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
